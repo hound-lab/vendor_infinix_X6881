@@ -248,6 +248,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6882/proprietary/vendor/etc/audio_param/SpeechUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechUI_ParamUnitDesc.xml \
     vendor/infinix/X6882/proprietary/vendor/etc/audio_param/SpeechVolUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechVolUI_AudioParam.xml \
     vendor/infinix/X6882/proprietary/vendor/etc/audio_param/SpeechVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechVolUI_ParamUnitDesc.xml \
+    vendor/infinix/X6882/proprietary/vendor/etc/audio_param/SpeechVol_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechVol_AudioParam.xml \
     vendor/infinix/X6882/proprietary/vendor/etc/audio_param/SpeechVol_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechVol_ParamUnitDesc.xml \
     vendor/infinix/X6882/proprietary/vendor/etc/audio_param/Speech_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Speech_AudioParam.xml \
     vendor/infinix/X6882/proprietary/vendor/etc/audio_param/Speech_ParamTreeView.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Speech_ParamTreeView.xml \
@@ -399,20 +400,8 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal.conf \
     vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal_mtbf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_mtbf.conf \
     vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal_policy_00.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_00.conf \
-    vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal_policy_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_01.conf \
     vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal_policy_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_02.conf \
-    vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal_policy_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_03.conf \
-    vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal_policy_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_04.conf \
-    vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal_policy_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_05.conf \
-    vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal_policy_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_06.conf \
-    vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal_policy_07.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_07.conf \
     vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal_policy_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_08.conf \
-    vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal_policy_09.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_09.conf \
-    vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal_policy_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_10.conf \
-    vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal_policy_11.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_11.conf \
-    vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal_policy_12.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_12.conf \
-    vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal_policy_13.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_13.conf \
-    vendor/infinix/X6882/proprietary/vendor/etc/thermal/thermal_policy_14.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_14.conf \
     vendor/infinix/X6882/proprietary/vendor/etc/tran_camprofiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/tran_camprofiles.xml \
     vendor/infinix/X6882/proprietary/vendor/etc/trancam_filelock.json:$(TARGET_COPY_OUT_VENDOR)/etc/trancam_filelock.json \
     vendor/infinix/X6882/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
@@ -546,7 +535,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     libAVCSecureVencCA_510 \
     libTransNS \
-    libaedv \
     libbwc \
     libccci_util \
     libgz_gp_client \
@@ -1817,6 +1805,7 @@ PRODUCT_PACKAGES += \
     vendor.transsion.hardware.trancam.trancamserver@1.0.xml \
     ccci_mdinit \
     ccci_rpcd \
+    epdg_wod \
     fuelgauged \
     fuelgauged_nvram \
     gsm0710muxd \

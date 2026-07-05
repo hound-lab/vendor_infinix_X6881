@@ -7,6 +7,7 @@ soong_namespace {
         "device/infinix/X6882",
         "hardware/mediatek",
         "hardware/mediatek/libmtkperf_client",
+        "hardware/mediatek/libaedv",
     ],
 }
 
@@ -289,53 +290,6 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "liblog",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaedv",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaedv.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libbase",
-                "libunwindstack",
-                "libselinux",
-                "liblog",
-                "libz",
-                "libc",
-                "libdl",
-                "libm",
-                "libc++",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaedv.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libbase",
-                "libunwindstack",
-                "libselinux",
-                "liblog",
-                "libz",
-                "libc",
-                "libdl",
-                "libm",
-                "libc++",
             ],
         },
     },
@@ -2828,7 +2782,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so",
             ],
             shared_libs: [
-                "libhidlbase-v31",
+                "libhidlbase-v32",
                 "libhidltransport",
                 "libhwbinder",
                 "libhardware",
@@ -2836,7 +2790,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.sensors@1.0",
                 "android.hardware.sensors@1.0-convert-shared",
                 "liblog",
-                "libutils-v31",
+                "libutils-v32",
                 "libcutils",
                 "libpq_prot",
                 "libhidlmemory",
@@ -18911,7 +18865,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libvideofilmeffect",
-    allow_undefined_symbols: true,
     owner: "infinix",
     strip: {
         none: true,
@@ -18936,6 +18889,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -32285,7 +32239,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libsegmention",
-    allow_undefined_symbols: true,
     owner: "infinix",
     strip: {
         none: true,
@@ -32306,6 +32259,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     relative_install_path: "mt6789",
     prefer: true,
     soc_specific: true,
@@ -36142,6 +36096,31 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "epdg_wod",
+    owner: "infinix",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/epdg_wod",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libwo",
+                "libc",
+                "libdl",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "fuelgauged",
     owner: "infinix",
     target: {
@@ -36200,12 +36179,11 @@ cc_prebuilt_binary {
     name: "gsm0710muxd",
     owner: "infinix",
     target: {
-        android_arm64: {
+        android_arm: {
             srcs: [
                 "proprietary/vendor/bin/gsm0710muxd",
             ],
             shared_libs: [
-                "libcutils",
                 "libmtkcutils",
                 "libmtkrillog",
                 "libmtkproperty",
@@ -36217,7 +36195,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "64",
+    compile_multilib: "32",
     strip: {
         none: true,
     },
@@ -36568,7 +36546,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/mtkfusionrild",
             ],
             shared_libs: [
-                "libutils-v31",
+                "libutils-v32",
                 "libmtkrillog",
                 "libmtkproperty",
                 "libmtkcutils",
@@ -36740,10 +36718,10 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service",
             ],
             shared_libs: [
-                "libhidlbase-v31",
+                "libhidlbase-v32",
                 "libhidltransport",
                 "liblog",
-                "libutils-v31",
+                "libutils-v32",
                 "libhardware",
                 "vendor.mediatek.hardware.pq@2.15",
                 "libc++",
