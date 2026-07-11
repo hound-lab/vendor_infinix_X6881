@@ -2782,7 +2782,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so",
             ],
             shared_libs: [
-                "libhidlbase-v32",
+                "libhidlbase-v31",
                 "libhidltransport",
                 "libhwbinder",
                 "libhardware",
@@ -2790,7 +2790,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.sensors@1.0",
                 "android.hardware.sensors@1.0-convert-shared",
                 "liblog",
-                "libutils-v32",
+                "libutils-v31",
                 "libcutils",
                 "libpq_prot",
                 "libhidlmemory",
@@ -36096,31 +36096,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "epdg_wod",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/epdg_wod",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libwo",
-                "libc",
-                "libdl",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "fuelgauged",
     owner: "infinix",
     target: {
@@ -36179,11 +36154,12 @@ cc_prebuilt_binary {
     name: "gsm0710muxd",
     owner: "infinix",
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/gsm0710muxd",
             ],
             shared_libs: [
+                "libcutils",
                 "libmtkcutils",
                 "libmtkrillog",
                 "libmtkproperty",
@@ -36195,7 +36171,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     strip: {
         none: true,
     },
@@ -36546,7 +36522,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/mtkfusionrild",
             ],
             shared_libs: [
-                "libutils-v32",
+                "libutils-v31",
                 "libmtkrillog",
                 "libmtkproperty",
                 "libmtkcutils",
@@ -36718,10 +36694,10 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service",
             ],
             shared_libs: [
-                "libhidlbase-v32",
+                "libhidlbase-v31",
                 "libhidltransport",
                 "liblog",
-                "libutils-v32",
+                "libutils-v31",
                 "libhardware",
                 "vendor.mediatek.hardware.pq@2.15",
                 "libc++",
