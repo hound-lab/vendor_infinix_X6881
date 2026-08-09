@@ -526,7 +526,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     libAVCSecureVencCA_510 \
     libTransNS \
-    libaedv \
     libbwc \
     libccci_util \
     libgz_gp_client \
