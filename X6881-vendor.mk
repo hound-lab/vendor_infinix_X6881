@@ -1045,6 +1045,7 @@ PRODUCT_PACKAGES += \
     libviamipc-ril \
     libvideofilmeffect \
     libvideofilter_cl_64 \
+    libvidhance \
     libvow_ap_test_aa \
     libvow_ap_test_dd \
     libvow_ap_test_ha \

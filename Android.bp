@@ -13910,6 +13910,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libvidhance",
+    owner: "infinix",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvidhance.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libEGL",
+                "libGLESv2",
+                "libGLESv3",
+                "libm",
+                "liblog",
+                "libc++",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libvow_ap_test_aa",
     owner: "infinix",
     strip: {
