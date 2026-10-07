@@ -102,8 +102,8 @@
       <Param name="UL ES LB visibility" value="1"/>
       <Param name="UL AES LB visibility" value="1"/>
       <Param name="UL MIC2 TunableIIR visibility" value="0"/>
-      <Param name="UL DMNR mode_param visibility" value="1"/>
-      <Param name="UL DMNR common_param visibility" value="1"/>
+      <Param name="UL DMNR mode_param visibility" value="0"/>
+      <Param name="UL DMNR common_param visibility" value="0"/>
       <Param name="UL IIR visibility" value="1"/>
       <Param name="UL MIC IIR visibility" value="1"/>
       <Param name="DV visibility" value="0"/>

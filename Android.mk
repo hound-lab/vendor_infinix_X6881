@@ -4,19 +4,19 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),X6882)
+ifeq ($(TARGET_DEVICE),X6881)
 
-$(call add-radio-file-sha1-checked,radio/dpm.img,e7a41f6f155abcae334b5a9e04cdf89166ba2d51)
-$(call add-radio-file-sha1-checked,radio/gz.img,17f221061360a530ac1e7c79fb2d3802baf936c7)
-$(call add-radio-file-sha1-checked,radio/lk.img,348004f5205778415f3ae7c4117737370d6037fc)
-$(call add-radio-file-sha1-checked,radio/logo.img,49a414625efb9b9f4ff2287206dd59b28bf93f88)
-$(call add-radio-file-sha1-checked,radio/mcupm.img,0404ae8f6e7a1f34299d88aa917d9abce717c8e6)
-$(call add-radio-file-sha1-checked,radio/md1img.img,b6ec139e372f480d46a7898dab6aade448ccbefd)
-$(call add-radio-file-sha1-checked,radio/pi_img.img,5b95c83e73cfe849fa64ac36a5a97ae5233b005e)
-$(call add-radio-file-sha1-checked,radio/scp.img,593657a19e239363ab7f821183a2d28dcc9fd9dc)
-$(call add-radio-file-sha1-checked,radio/spmfw.img,2f7be2b87f27b44c2acd21c025a6986883c6d64f)
-$(call add-radio-file-sha1-checked,radio/sspm.img,247d86afdc1d17aae102a8013c731dde735b52e7)
-$(call add-radio-file-sha1-checked,radio/tee.img,38496180e889058ac312fef8fd072532c0e68ff2)
-$(call add-radio-file-sha1-checked,radio/tkv.img,a2fb73d7e8bb1d00cb3bc8f36900460932e25b33)
+$(call add-radio-file-sha1-checked,radio/dpm.img,4b9d12aa4373c8a047c7f0a8d8051583bcff380d)
+$(call add-radio-file-sha1-checked,radio/gz.img,4dfa23dc278367d9a8fdb135ca02454c26ec6b69)
+$(call add-radio-file-sha1-checked,radio/lk.img,f7291711211d51b65e89b21def5b77c85da0db7e)
+$(call add-radio-file-sha1-checked,radio/logo.img,57442e998e77d1053b620107fa31aa4bc1a3b973)
+$(call add-radio-file-sha1-checked,radio/mcupm.img,8b57962952159d50ebd993ae6535bb5e285cb92c)
+$(call add-radio-file-sha1-checked,radio/md1img.img,b67f713a096a3f62853a7dde788f0d83e1bf1bf4)
+$(call add-radio-file-sha1-checked,radio/pi_img.img,f2ade84bb454c9f6dc41573ad7930eab5785f126)
+$(call add-radio-file-sha1-checked,radio/scp.img,4d06a5fd1a9a3fb75297f24ce7e573f94e03921d)
+$(call add-radio-file-sha1-checked,radio/spmfw.img,677bb31259933b6d96cf0ba48afbfc2cd1df2d34)
+$(call add-radio-file-sha1-checked,radio/sspm.img,5841bc01f8802b7b92d3d8708956ee0ef38f3514)
+$(call add-radio-file-sha1-checked,radio/tee.img,9604df640044680f721fde98c31a49265149aaa8)
+$(call add-radio-file-sha1-checked,radio/tkv.img,a39802f90b42bbb45df62726934a632b6b90135d)
 
 endif

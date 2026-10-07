@@ -71,7 +71,7 @@
             featureName="TranCamMode_ARshot"
             eApp="App_ARshot"
             />
-	    
+
         <Package name="com.transsion.camera"
             featureName="TranCamMode_DualVideo"
             eApp="App_DualVideo"
@@ -86,7 +86,7 @@
             featureName="TranCamMode_EXT_VideoMakeup"
             eApp="App_VideoMakeup"
             />
-			
+
         <!--3PartyMode, some special mode-->
         <Package name="com.transsion.camera"
             featureName="TranCamMode_EXT_360VideoHDR"
@@ -97,7 +97,7 @@
             featureName="TranCamMode_EXT_AntiVideo"
             eApp="App_AntiVideo"
             />
-			
+
 		<Package name="com.transsion.camera"
             featureName="TranCamMode_EXT_VideoFaceBeauty"
             eApp="App_VideoFaceBeauty"
@@ -233,7 +233,7 @@
             featureName="TranCamMode_UnKown"
             eApp="App_TikTok_Lite"
             />
-			
+
 			<Package name="com.ss.android.lark"
             featureName="TranCamMode_UnKown"
             eApp="App_3rd_party"
@@ -248,5 +248,5 @@
             featureName="TranCamMode_UnKown"
             eApp="App_3rd_party"
             />
-			
+
 </TranCamAtmsProfiles>

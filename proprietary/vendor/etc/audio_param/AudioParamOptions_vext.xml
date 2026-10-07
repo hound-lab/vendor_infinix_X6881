@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AudioParamOptions>
  <Param name="MTK_WB_SPEECH_SUPPORT" value="" />
- <Param name="MTK_AUDIO_HD_REC_SUPPORT" value="" />
+ <Param name="MTK_AUDIO_HD_REC_SUPPORT" value="yes" />
  <Param name="MTK_DUAL_MIC_SUPPORT" value="no" />
  <Param name="MTK_HANDSFREE_DMNR_SUPPORT" value="" />
  <Param name="DMNR_TUNNING_AT_MODEMSIDE" value="" />
@@ -26,10 +26,10 @@
  <Param name="MTK_FM_SUPPORT" value="yes" />
  <Param name="MTK_HEADSET_ACTIVE_NOISE_CANCELLATION" value="" />
  <Param name="MTK_SUPPORT_TC1_TUNNING" value="" />
- <Param name="MTK_AUDIO_SPEAKER_PATH" value="int_hp_buf" />
+ <Param name="MTK_AUDIO_SPEAKER_PATH" value="int_lo_buf" />
  <Param name="MTK_AUDIO_NUMBER_OF_MIC" value="1" />
  <Param name="MTK_PLATFORM" value="MT6789" />
- <Param name="MTK_AURISYS_FRAMEWORK_SUPPORT" value="" />
+ <Param name="MTK_AURISYS_FRAMEWORK_SUPPORT" value="yes" />
  <Param name="MTK_BESLOUDNESS_RUN_WITH_HAL" value="yes" />
  <Param name="MTK_AUDIO" value="yes" />
  <Param name="USE_CUSTOM_AUDIO_POLICY" value="" />
@@ -40,13 +40,13 @@
  <Param name="MTK_HIFIAUDIO_SUPPORT" value="yes" />
  <Param name="MTK_BESLOUDNESS_SUPPORT" value="yes" />
  <Param name="MTK_USB_PHONECALL" value="" />
- <Param name="MTK_AUDIO_NUMBER_OF_SPEAKER" value="1" />
+ <Param name="MTK_AUDIO_NUMBER_OF_SPEAKER" value="2" />
  <Param name="MTK_A2DP_OFFLOAD_SUPPORT" value="no" />
  <Param name="MTK_TTY_SUPPORT" value="" />
  <Param name="MTK_AUDIO_A2DP_LATENCY_IMPROVE" value="yes" />
  <Param name="MTK_BT_HEARING_AID_SUPPORT" value="yes" />
  <Param name="MTK_SPK_AP_SWMIX_PROCESS" value="yes" />
- <Param name="MTK_AUDIODSP_SUPPORT" value="no" />
+ <Param name="MTK_AUDIODSP_SUPPORT" value="" />
  <Param name="MTK_INCALL_HANDSFREE_DMNR" value="no" />
  <Param name="MTK_VOW_SUPPORT" value="no" />
  <Param name="MTK_VOW_AMAZON_SUPPORT" value="no" />
@@ -58,11 +58,11 @@
  <Param name="MTK_VOW_RECORD_CONCURRENT" value="" />
  <Param name="MTK_VOW_NORMAL_RECORD_ENROLL" value="no" />
  <Param name="MTK_PHONE_CALL_FIXED_48K_SAMPLERATE" value="yes" />
- <Param name="TRAN_DUALSPK_BY_HS_LOL" value="no" />
+ <Param name="TRAN_DUALSPK_BY_HS_LOL" value="yes" />
  <Param name="MTK_BESLOUNDNESS_SUPPORT" value="" />
  <Param name="TRAN_AW87XXX_PA" value="yes" />
  <Param name="TRAN_FOUR_AW87XXX_PA" value="" />
- <Param name="TRAN_AWINIC_EFFECT_SUPPORT" value="yes" />
+ <Param name="TRAN_AWINIC_EFFECT_SUPPORT" value="no" />
  <Param name="TRAN_AUDIO_UL_IG1206" value="" />
  <Param name="TRAN_AUDIO_DUAL_FS1559" value="" />
  <Param name="TRAN_AUDIO_FM_PA_MODE" value="" />
@@ -84,14 +84,14 @@
  <Param name="VIR_MAGI_CONFERENCE_SUPPORT" value="no" />
  <Param name="MTK_AUDIO_HIERARCHICAL_PARAM_SUPPORT" value="yes" />
  <Param name="MTK_AUDIO_TUNING_TOOL_V2_PHASE" value="2" />
- <Param name="VIR_MTK_RECORD_IIR_ENH_SUPPORT" value="no" />
- <Param name="VIR_MTK_VOIP_IIR_ENH_SUPPORT" value="no" />
- <Param name="VIR_MTK_VOIP_IIR_MIC_SUPPORT" value="no" />
+ <Param name="VIR_MTK_RECORD_IIR_ENH_SUPPORT" value="yes" />
+ <Param name="VIR_MTK_VOIP_IIR_ENH_SUPPORT" value="yes" />
+ <Param name="VIR_MTK_VOIP_IIR_MIC_SUPPORT" value="yes" />
  <Param name="KERNEL_BUFFER_SIZE_NORMAL" value="16384" />
  <Param name="KERNEL_BUFFER_SIZE_DEEP" value="32768" />
  <Param name="DPCM_DEEP_BUFFER" value="Playback_3" />
  <Param name="RCV_PATH_INT" value="yes" />
- <Param name="SPK_PATH_HP" value="yes" />
+ <Param name="SPK_PATH_LO" value="yes" />
  <Param name="CUST_XML_DIR" value="/data/vendor/audiohal/audio_param/" />
  <Param name="5_POLE_HS_SUPPORT" value="" />
  <Param name="VIR_MTK_USB_PHONECALL" value="yes" />

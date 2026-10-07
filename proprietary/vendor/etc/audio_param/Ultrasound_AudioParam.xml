@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AudioParam version="1.0">
   <ParamTree>
-    <Param path="Common" param_id="1"/>
+    <Param path="Common" param_id="0"/>
   </ParamTree>
   <ParamUnitPool>
     <ParamUnit param_id="0">

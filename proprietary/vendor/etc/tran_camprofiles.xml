@@ -167,7 +167,7 @@
             fpsRange=""
             />
         <!--[ITD] modify for X6853H895-5422 by xuelong.chen 20231201 end-->
-        <!--[ITD] modify for X6882PUBL-3141 by mingyue.zhang 20250113 start-->
+        <!--[ITD] modify for ITDTEAM-195795 by xuelong.chen 20250114 start-->
         <Package name="com.whatsapp.w4b"
             supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
             supportedVideoSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
@@ -180,8 +180,7 @@
             supportedPictureSizes="2560x1440,1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
             fpsRange=""
             />
-        <!--[ITD] modify for X6882PUBL-3141 by mingyue.zhang 20250113 end-->
-
+        <!--[ITD] modify for ITDTEAM-195795 by xuelong.chen 20250114 end-->
 <!--API1 End-->
 
 <!--
